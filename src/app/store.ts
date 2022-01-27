@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import counterReducer from '../slice/todo'
+import controlPageReducer from '../slice/controlPage'
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    // comments: commentsReducer,
+    controlPage: controlPageReducer,
     // users: usersReducer
   }
 })
